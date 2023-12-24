@@ -13,8 +13,8 @@ function Navbar() {
                         {/* Logo */}
                         <div>
                             <Link href="#" className="flex items-center py-5 px-2 gap-2">
-                                <Image src="/assets/images/icon/team-icon.png" height={32} width={32} alt="Logo" className="mr-2" />
-                                <span className="font-semibold text-lg bg-gradient-to-r from-rose-500 to-green-500 text-transparent bg-clip-text">Lidah Nusantara</span>
+                                <Image src="/assets/images/icon/team-icon.png" height={44} width={44} alt="Logo" className="mr-2" />
+                                <span className="rounded-full text-[#FFFBF5] p-2 bg-[#872341] font-semibold text-lg bg-gradient-to-r from-orange-400 to-red-500 ">Lidah Nusantara</span>
                             </Link>
                         </div>
 
