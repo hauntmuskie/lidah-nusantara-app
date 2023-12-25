@@ -7,7 +7,7 @@ export default function Homepage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('pages/homepage');
+    router.push('/homepage/');
   }, []);
 
   return null;

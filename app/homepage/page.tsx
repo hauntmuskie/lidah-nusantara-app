@@ -2,11 +2,11 @@
 
 import Typewriter from 'typewriter-effect';
 
-import Navbar from "../../components/navbar";
-import TopPicks from '../../components/top-picks';
-import ReviewsSection from '../../components/review';
+import Navbar from "../components/navbar";
+import TopPicks from '../components/top-picks';
+import ReviewsSection from '../components/review';
 import Link from 'next/link';
-import Footer from '../../components/footer';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -17,13 +17,13 @@ export default function Home() {
         <Navbar />
       </nav>
 
-      <section className='h-screen p-12 xl:p-48 flex flex-col gap-2 justify-center '>
+      <section className='h-screen p-12 xl:p-48 flex flex-col gap-2 justify-center'>
 
-        <h1 className='text-4xl font-bold'>
+        <h1 className='text-6xl  font-bold p-2 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent'>
           Mau Masak Apa Hari Ini?
         </h1>
 
-        <div className='text-green-500 text-4xl font-bold'>
+        <div className='text-green-500 text-4xl font-bold shadow-xl p-2 w-72 shadow-green-300 rounded-3xl'>
           <Typewriter
             options={{
               strings: ['Nasi Goreng?', 'Gudeg?', 'Mendoan?', 'Soto Ayam?', 'Rujak Cingur?'],
@@ -32,15 +32,16 @@ export default function Home() {
             }}
           />
         </div>
+
         <div className='flex flex-col gap-3 mt-5'>
 
-          <h5 className='bg-[#BDCA4C] p-2 border rounded-full text-white w-28'>
+          <h5 className='bg-[#BDCA4C] p-2 border rounded-full text-white w-32 font-semibold shadow-md'>
             Cari disini =&gt;
           </h5>
 
           <div className='flex gap-3 items-center'>
-            <input type="search" name="search" id="search" className='border-2 rounded-full p-2 w-full' />
-            <Link href='' className='transition-all scale-105 hover:text-yellow-600'>=&gt;</Link>
+            <input type="search" name="search" id="search" className='border-2 rounded-full p-2 px-3 w-full shadow-md' />
+            <Link href='' className='transition-all scale-105 hover:text-yellow-600 shadow-md p-2 rounded-full'>=&gt;</Link>
           </div>
 
         </div>

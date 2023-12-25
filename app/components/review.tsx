@@ -25,7 +25,7 @@ const reviewsData = [
 const ReviewsSection: React.FC = () => {
   return (
     <div>
-      <h2 className="bg-[#15F968] inline-flex px-3 py-2 rounded-full text-2xl font-semibold mb-6 text-[#FFFF]">Ulasan Pengunjung</h2>
+      <h2 className="bg-[#15F968] shadow-xl inline-flex px-3 py-2 rounded-full text-2xl font-semibold mb-6 text-[#FFFF]">Ulasan Pengunjung</h2>
       {reviewsData.map((review, index) => (
         <ReviewCard key={index} {...review} />
       ))}
